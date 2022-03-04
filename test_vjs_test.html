@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Untitled Document</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" type="text/css" href="./css/test.css">
+    </head>
+    <body>
+        <div id="disp_name">
+            <div id="flex">
+                {{a_inp}}<input type = "number" id = "a_set" v-on:input = "a_set">
+                {{b_inp}}<input type = "number" id = "b_set" v-on:input = "b_set">
+                <button id="btn1" v-on:click="calc" >計算</button>
+            </div>
+            <p>{{calcreq}}{{calc_result}}</p>
+            <p>{{title}}</p>
+            <input type = "text" id = "name" v-on:input = "text">
+            <button id="btn2" v-on:click="show" >表示</button>
+            <p>{{name}}</p>
+        </div>
+        <script src="https://jp.vuejs.org/js/vue.js"></script>
+        <script src="./js/vue_js_test.js"></script>
+    </body>
+</html>
